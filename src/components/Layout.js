@@ -11,8 +11,6 @@ const Layout = ({ children }) => {
         setFlip(!flip)
     }
 
-    const url = "/data-visualization-with-d3"
-
   return (
     <Container className='content'>
         <Segment className={styles.h1}>
@@ -29,32 +27,32 @@ const Layout = ({ children }) => {
             <Grid.Column width={3} only='computer'>
                 <Segment.Group>
                     <Segment>
-                        <Link to={`${url}`}>
+                        <Link to="/">
                             Introduction
                         </Link>
                     </Segment>
                     <Segment>
-                        <Link to={`${url}/hello-world`}>
+                        <Link to="/hello-world">
                             Hello World
                         </Link>
                     </Segment>
                     <Segment>
-                        <Link to={`${url}/bar-chart`}>
+                        <Link to="/bar-chart">
                             Bar Chart
                         </Link>
                     </Segment>
                     <Segment>
-                        <Link to={`${url}/line-chart`}>
+                        <Link to="/line-chart">
                             Line Chart
                         </Link>
                     </Segment>
                     <Segment>
-                        <Link to={`${url}/scatter-plot`}>
+                        <Link to="/scatter-plot">
                             Scatter Plot
                         </Link>
                     </Segment>
                     <Segment>
-                        <Link to={`${url}/pie-chart`}>
+                        <Link to="/pie-chart">
                             Pie Chart
                         </Link>
                     </Segment>
@@ -83,32 +81,32 @@ const Layout = ({ children }) => {
                 
             </Segment>
             <Segment className={styles.sidebarSegment}>
-                <Link to={`${url}/`}>
+                <Link to="/">
                     Introduction
                 </Link>
             </Segment>
             <Segment className={styles.sidebarSegment}>
-                <Link to={`${url}/hello-world`}>
+                <Link to="/hello-world">
                     Hello World
                 </Link>
             </Segment>
             <Segment className={styles.sidebarSegment}>
-                <Link to={`${url}/bar-chart`}>
+                <Link to="/bar-chart">
                     Bar Chart
                 </Link>
             </Segment>
             <Segment className={styles.sidebarSegment}>
-                <Link to={`${url}/line-chart`}>
+                <Link to="/line-chart">
                     Line Chart
                 </Link>
             </Segment>
             <Segment className={styles.sidebarSegment}>
-                <Link to={`${url}/scatter-plot`}>
+                <Link to="/scatter-plot">
                     Scatter Plot
                 </Link>
             </Segment>
             <Segment className={styles.sidebarSegment}>
-                <Link to={`${url}/pie-chart`}>
+                <Link to="/pie-chart">
                     Pie Chart
                 </Link>
             </Segment>
