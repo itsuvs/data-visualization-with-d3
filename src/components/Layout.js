@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
             <Grid.Column width={3} only='computer'>
                 <Segment.Group>
                     <Segment>
-                        <Link to={`${url}/`}>
+                        <Link to={`${url}`}>
                             Introduction
                         </Link>
                     </Segment>
