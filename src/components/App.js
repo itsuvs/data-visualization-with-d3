@@ -14,10 +14,10 @@ export default function App() {
 
   return (
     <Router>
-      <HashRouter basename={`${url}`}>
+      <HashRouter basename="/" >
         <div>
             <Routes>
-                <Route exact path={`${url}`} element={<Home />} />
+                <Route exact path={`${url}/`} element={<Home />} />
                 <Route exact path={`${url}/hello-world`} element={<HelloWorld />} />
                 <Route exact path={`${url}/bar-chart`} element={<BarChart />} />
                 <Route exact path={`${url}/line-chart`} element={<LineChart />} />
