@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/data-visualization-with-d3/static/css/main.1a792748.css",
+    "main.js": "/data-visualization-with-d3/static/js/main.4301fea9.js",
+    "index.html": "/data-visualization-with-d3/index.html",
+    "main.1a792748.css.map": "/data-visualization-with-d3/static/css/main.1a792748.css.map",
+    "main.4301fea9.js.map": "/data-visualization-with-d3/static/js/main.4301fea9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a792748.css",
+    "static/js/main.4301fea9.js"
+  ]
+}
