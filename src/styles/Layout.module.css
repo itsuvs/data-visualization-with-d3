@@ -1,0 +1,49 @@
+.content{
+  background: yellow !important;
+}
+  
+.h1 {
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  text-align: center;
+  background: rgb(29, 28, 28) !important;
+}
+
+.headerContainer{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.hamburger{
+  position: relative;
+  display: none !important; 
+  transition: 0.4s;
+  transition-timing-function: linear !important;
+  z-index: 105;
+}
+
+.sidebar{
+  background: rgb(29, 28, 28) !important;
+}
+
+.sidebarSegment{
+  background-color: transparent !important;
+  margin: 10px 0px !important;
+}
+
+.sidebarSegment a{
+  text-decoration: none !important;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+
+  .headerContainer{
+    justify-content: space-between !important;
+  }
+
+  .hamburger{
+    display: block !important; 
+  }
+}

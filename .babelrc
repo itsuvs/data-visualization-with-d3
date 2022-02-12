@@ -1,0 +1,9 @@
+// This file tells babel to use mentioned preset and plugins
+
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": [
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-proposal-class-properties"
+    ]
+}
