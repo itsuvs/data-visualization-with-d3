@@ -1,5 +1,5 @@
 import React from "react";
-import {Routes, BrowserRouter as Router, Route} from "react-router-dom";
+import {HashRouter, Routes, BrowserRouter as Router, Route} from "react-router-dom";
 import Home from "./Home";
 import BarChart from "./BarChart";
 import LineChart from "./LineChart";
@@ -14,9 +14,10 @@ export default function App() {
 
   return (
     <Router>
+      <HashRouter basename={`${url}`}>
         <div>
             <Routes>
-                <Route exact path={`${url}/`} element={<Home />} />
+                <Route exact path={`${url}`} element={<Home />} />
                 <Route exact path={`${url}/hello-world`} element={<HelloWorld />} />
                 <Route exact path={`${url}/bar-chart`} element={<BarChart />} />
                 <Route exact path={`${url}/line-chart`} element={<LineChart />} />
@@ -25,6 +26,7 @@ export default function App() {
                 <Route path="*" element={<NoMatch />}/>
             </Routes>
         </div>
+      </HashRouter>
     </Router>
   )
 }
