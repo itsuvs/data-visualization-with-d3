@@ -1,7 +1,4 @@
-.content{
-  background: yellow !important;
-}
-  
+
 .h1 {
   margin-top: 10px !important;
   margin-bottom: 20px !important;
@@ -35,6 +32,11 @@
 .sidebarSegment a{
   text-decoration: none !important;
   color: white !important;
+}
+
+.content{
+  font-size: 1.1rem !important;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {

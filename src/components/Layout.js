@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
     }
 
   return (
-    <Container className='content'>
+    <Container>
         <Segment className={styles.h1}>
             <Header as='h3' color='yellow' className={styles.headerContainer}>
                 <Icon name="bars" className={styles.hamburger} onClick={flipHamburger} rotated={flip ? 'clockwise' : 'counterclockwise'} />
