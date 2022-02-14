@@ -34,17 +34,27 @@ const HelloWorld = () => {
       <p className={styles.content}>
         D3 is all about 'selections'. You select an element in DOM and manipulate how you want to using predefined methods known as 'operators'. It's just like how we do it in classic DOM manipulation but
         D3 offers a lot cleaner interface. Other than its ease of use, D3 is an open source library (btw I am a big fan of open source) so we can do lots of experiment without worrying about api call limitations
-        or payments in general. 
+        or payments in general. Now, let's get into coding:
       </p>
-      <p className={styles.content}>
-        Now, let's get into coding:
+      <p className={styles.subHeading}>
+        Input:
       </p>
       <Segment secondary compact>
-        <Image src={HelloWorldImage} fluid />
+        <Image className={styles.contentImage} src={HelloWorldImage} fluid />
       </Segment>
-      <Segment id="hello-world">
+      <p className={styles.content}>
+        As we can see above, I've selected an element <span className={styles.highlighter}>#hello-world</span> using D3's operator 'select'. The 'append' operator in 2nd line adds an svg inside <span className={styles.highlighter}>#hello-world</span> element.
+        The 'attr' operator in 3rd and 4th line assigns some attribute to the svg element. Then I appended a text element with text 'Hello World' and then assigned some attributes to it. So simple!
+      </p>
+      <p className={styles.subHeading}>
+        Output:
+      </p>
+      <Segment className={styles.contentImage} id="hello-world" compact>
 
       </Segment>
+      <p className={styles.content}>
+        This is quite an easy example but it's also a necessary one. I absolutely had fun learning this! 
+      </p>
     </Layout>
   );
 };

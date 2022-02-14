@@ -36,7 +36,21 @@
 
 .content{
   font-size: 1.1rem !important;
-  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.subHeading{
+  font-size: 1.1rem !important;
+}
+
+.highlighter{
+  background: #e5e5e5; 
+  padding: 2px; 
+  border-radius: 5px;
+}
+
+.contentImage{
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
