@@ -1,12 +1,50 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
-
 import Layout from './Layout';
+import * as d3 from 'd3';
+import { Header, Segment, Image } from 'semantic-ui-react';
+import styles from '../styles/Layout.module.css'
+import HelloWorldImage from '../assets/hello-world.png'
 
 const HelloWorld = () => {
+
+  useEffect(() => {
+    d3.select('#hello-world')
+    .append('svg')
+    .attr('style',"outline: 1px solid black")
+    .attr('style',"width: 100%")
+    .append('text')
+    .text('Hello World')
+    .attr("y", 90)
+    .attr("x", 20)
+    .attr("font-size", 36)
+    .attr("font-family", "monospace")
+    .attr("fill", "black");
+  },[])
+
   return (
     <Layout>
-      <p>Hello World</p>
+      <Header>
+        Hello World
+      </Header>
+      <p className={styles.content}>
+        Just like with any other programming language, getting started with D3 (Data Driven Document) is incomplete without a "Hello, World" program. I could have done all sorts of crazy "Hello, World"
+        representation using shapes but for the sake of simplicity and understanding I am using text.
+      </p>
+      <p className={styles.content}>
+        D3 is all about 'selections'. You select an element in DOM and manipulate how you want to using predefined methods known as 'operators'. It's just like how we do it in classic DOM manipulation but
+        D3 offers a lot cleaner interface. Other than its ease of use, D3 is an open source library (btw I am a big fan of open source) so we can do lots of experiment without worrying about api call limitations
+        or payments in general. 
+      </p>
+      <p className={styles.content}>
+        Now, let's get into coding:
+      </p>
+      <Segment secondary compact>
+        <Image src={HelloWorldImage} fluid />
+      </Segment>
+      <Segment id="hello-world">
+
+      </Segment>
     </Layout>
   );
 };
