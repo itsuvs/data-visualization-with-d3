@@ -56,6 +56,11 @@ const Layout = ({ children }) => {
                             Pie Chart
                         </Link>
                     </Segment>
+                    <Segment>
+                        <a href="https://itsuvs.github.io">
+                            <Icon name="arrow left" /> Back To Profile
+                        </a>
+                    </Segment>
                 </Segment.Group>            
             </Grid.Column>
             <Grid.Column computer={13} tablet={16} mobile={16} >
@@ -109,6 +114,11 @@ const Layout = ({ children }) => {
                 <Link to="/pie-chart">
                     Pie Chart
                 </Link>
+            </Segment>
+            <Segment className={styles.sidebarSegment}>
+                <a href="https://itsuvs.github.io">
+                   <Icon name="arrow left" /> Back To Profile
+                </a>
             </Segment>
         </Segment.Group>
       </Sidebar>
