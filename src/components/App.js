@@ -7,6 +7,7 @@ import PieChart from "./PieChart";
 import ScatterPlot from "./ScatterPlot";
 import HelloWorld from "./HelloWorld";
 import NoMatch from "./NoMatch";
+import Axes from "./Axes";
 
 export default function App() {
 
@@ -16,6 +17,7 @@ export default function App() {
           <Routes>
               <Route exact path="/" element={<Home />} />
               <Route exact path="/hello-world" element={<HelloWorld />} />
+              <Route exact path="/axes" element={<Axes />} />
               <Route exact path="/bar-chart" element={<BarChart />} />
               <Route exact path="/line-chart" element={<LineChart />} />
               <Route exact path="/pie-chart" element={<PieChart />} />

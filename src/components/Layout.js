@@ -42,6 +42,11 @@ const Layout = ({ children }) => {
                         </Link>
                     </Segment>
                     <Segment>
+                        <Link to="/axes">
+                            Axes
+                        </Link>
+                    </Segment>
+                    <Segment>
                         <Link to="/line-chart">
                             Line Chart
                         </Link>
@@ -98,6 +103,11 @@ const Layout = ({ children }) => {
             <Segment className={styles.sidebarSegment}>
                 <Link to="/bar-chart">
                     Bar Chart
+                </Link>
+            </Segment>
+            <Segment>
+                <Link to="/axes">
+                    Axes
                 </Link>
             </Segment>
             <Segment className={styles.sidebarSegment}>
