@@ -48,7 +48,9 @@ const Axes = () => {
         Axes
       </Header>
       <p className={styles.content}>
-       
+        Any sort of chart or graph is incomplete without axes as they provide human-readable scale references. D3 has four easy methods to draw four types of axes. All we need is an 'SVG' element to add the axes into and
+        a scaling function to scale against given data. Talking about scaling function, there are total 6 of them: scaleLinear, scaleSqrt, scaleLog, scaleTime, scaleBand and scalePoint. I have included a picture at the bottom of this
+        article which I think does the best job in depicting the key differences among them.
       </p>
     </Layout>
   );

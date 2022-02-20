@@ -5,7 +5,6 @@ import { Header, Segment, Image } from 'semantic-ui-react';
 import styles from '../styles/Layout.module.css';
 import * as d3 from 'd3';
 import BarChartImage from '../assets/bar-chart.png'
-import { func } from 'prop-types';
 
 const BarChart = () => {
   
