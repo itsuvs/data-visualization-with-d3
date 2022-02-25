@@ -21,13 +21,13 @@ const Axes = () => {
                 .attr('style', 'outline: 1px solid black')
                 .attr('style', 'background: #e5e5e5');
 
-    var scale = d3.scaleLinear().domain([20, 220]).range([0, 400]);
+    var scale = d3.scaleLinear().domain([0, 200]).range([10, 252]);
 
     var xaxis = d3.axisBottom()
     .scale(scale);
     
     svg.append("g")
-    .attr("transform", "translate(50,120)")
+    .attr("transform", "translate(0,140)")
     .call(xaxis);
     
   },[])
