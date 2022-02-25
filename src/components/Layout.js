@@ -105,7 +105,7 @@ const Layout = ({ children }) => {
                     Bar Chart
                 </Link>
             </Segment>
-            <Segment>
+            <Segment className={styles.sidebarSegment}>
                 <Link to="/axes">
                     Axes
                 </Link>
