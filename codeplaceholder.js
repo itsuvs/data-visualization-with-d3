@@ -18,3 +18,4 @@ var scale = d3.scaleLinear().domain([0, 200]).range([10, 252]);
 var xaxis = d3.axisBottom().scale(scale);
 
 svg.append("g").attr("transform", "translate(0,140)").call(xaxis);
+
