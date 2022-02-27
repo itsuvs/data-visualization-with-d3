@@ -9,7 +9,7 @@ export default function Scaling() {
     <Layout>
       <Header>Scaling</Header>
       <p className={styles.content}>
-        Scaling is transforming data values into visual variables such as position, length, color, etc and the functions used in scaling are called as scale functions.
+        Scaling functions transform data values into visual variables such as position, length, color, etc. In simple words, they describe how an actual dimension of the original data is to be represented as a visual variable.
         There are four categories of scale functions: 
         <span
           style={{ fontStyle: "italic", color: "purple", fontWeight: "bold" }}
@@ -17,13 +17,10 @@ export default function Scaling() {
            Continuous, Sequential, Quantized and Ordinal.
         </span>
       </p>
-      <Segment secondary compact>
-        {/* <Image className={styles.contentImage} src={AxesImage} fluid /> */}
-      </Segment>
+      
       <p className={styles.content}>
 
       </p>
-      <Segment className={styles.contentImage} id="axes" compact></Segment>
     </Layout>
   )
 }
