@@ -81,6 +81,43 @@ export default function Scaling() {
           </Table.Body>
         </Table>
       </Container>
+
+      <Container>
+        <h4>
+         2. Scales with continuous input and discrete output
+        </h4>
+        <Table celled padded>
+          <Table.Header>
+            <Table.Row>
+              <Table.HeaderCell>Function</Table.HeaderCell>
+              <Table.HeaderCell>Description</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell singleLine>scaleQuantize()</Table.Cell>
+              <Table.Cell>
+                Uses y=mx+c to interpolate across domain and range
+              </Table.Cell>
+            </Table.Row>
+            
+            <Table.Row>
+              <Table.Cell singleLine>scaleQuantile()</Table.Cell>
+              <Table.Cell>
+                Uses y=m*x^k + b to interpolate across domain and range
+              </Table.Cell>
+            </Table.Row>
+
+            <Table.Row>
+              <Table.Cell singleLine>scaleThreshold()</Table.Cell>
+              <Table.Cell>
+                This is the special case of power scale which use k = 0.5
+              </Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      </Container>
     </Layout>
   );
 }
