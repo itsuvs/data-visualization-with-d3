@@ -15,17 +15,26 @@ const LineChart = () => {
       [100, 140]
   ];
 
-  var width = 272;
-  var height = 272;
+    var width = 350;
+    var height = 350;
 
-  var svg = d3.select('#line-chart')
+    var svg = d3.select('#line-chart')
               .append('svg')
               .attr('style','outline: 1px solid black')
-              .attr('style',"width: 100%")
-              .attr('style', width)
-              .attr('style', height)
+              .attr('width', width)
+              .attr('height', height)
               .attr('style', 'outline: 1px solid black')
               .attr('style', 'background: #e5e5e5');
+
+    var scaleX = d3.scaleLinear().domain([0, 200]).range([0, width - 20]);
+    var scaleY = d3.scaleLinear().domain([0, 200]).range([height - 20, 0]);
+
+    var xaxis = d3.axisBottom().scale(scaleX);
+    var yaxis = d3.axisLeft().scale(scaleY);
+
+    svg.append("g").attr("transform", `translate(0, ${height - 20} )`).call(xaxis);
+    svg.append("g").call(yaxis);
+
   },[])
 
   return (
