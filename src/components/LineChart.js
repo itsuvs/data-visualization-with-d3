@@ -20,20 +20,22 @@ const LineChart = () => {
 
     var svg = d3.select('#line-chart')
               .append('svg')
-              .attr('style','outline: 1px solid black')
               .attr('width', width)
               .attr('height', height)
-              .attr('style', 'outline: 1px solid black')
+              .attr('style','outline: 1px solid black')
               .attr('style', 'background: #e5e5e5');
 
-    var scaleX = d3.scaleLinear().domain([0, 200]).range([0, width - 20]);
-    var scaleY = d3.scaleLinear().domain([0, 200]).range([height - 20, 0]);
+    var scaleX = d3.scaleLinear().domain([0, 200]).range([0, width - 80]);
+    var scaleY = d3.scaleLinear().domain([0, 200]).range([height - 40, 0]);
 
     var xaxis = d3.axisBottom().scale(scaleX);
     var yaxis = d3.axisLeft().scale(scaleY);
 
-    svg.append("g").attr("transform", `translate(0, ${height - 20} )`).call(xaxis);
-    svg.append("g").call(yaxis);
+    // svg.append("g").attr("transform", `translate(${40}, ${height - 20} )`).call(xaxis);
+    // svg.append("g").attr("transform", `translate(${40}, ${20})`).call(yaxis);
+
+    svg.append("g").attr("transform", `translate(${40}, ${height - 40 + 20} )`).call(xaxis);
+    svg.append("g").attr("transform", `translate(${40}, ${20} )`).call(yaxis);
 
   },[])
 
