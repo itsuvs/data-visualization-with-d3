@@ -11,15 +11,14 @@ const HelloWorld = () => {
   useEffect(() => {
     d3.select('#hello-world')
     .append('svg')
-    .attr('style',"outline: 1px solid black")
-    .attr('style',"width: 100%")
+    .attr('style',"outline: 1px solid black; width: 100%; background: black;")
     .append('text')
     .text('Hello World')
+    .attr('style',"fill: yellow")
     .attr("y", 90)
     .attr("x", 20)
     .attr("font-size", 36)
-    .attr("font-family", "monospace")
-    .attr("fill", "black");
+    .attr("font-family", "monospace");
   },[])
 
   return (
