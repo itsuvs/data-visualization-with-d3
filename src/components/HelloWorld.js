@@ -28,12 +28,10 @@ const HelloWorld = () => {
         Just like with any other programming language, getting started with D3 (Data Driven Document) is incomplete without a "Hello, World" program. I could have gone for some crazy visualization for "Hello, World"
         but for the sake of simplicity, understanding and my sanity I am using text.
       </p>
-      <p className={styles.content}>
-        <span style={{'background': '#1e1e1e', 'color':'white', 'padding': '5px', 'marginBottom': '2px'}}>
-         What I am trying to achieve: 
-         </span>
+      <p className={styles.mission}>
+         What I am trying to achieve : 
       </p>
-      <p>
+      <p className={styles.missionStatement}>
         To display text "Hello World" in an SVG element using D3
       </p>
       <p className={styles.subHeading}>

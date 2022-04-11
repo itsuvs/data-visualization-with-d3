@@ -39,6 +39,20 @@
   margin-top: 20px;
 }
 
+.mission{
+  font-size: 1.1rem !important;
+  margin-top: 20px;
+  background: #1e1e1e; 
+  color: white; 
+  padding: 5px; 
+  margin-bottom: 2px;
+  width: fit-content;
+}
+
+.missionStatement{
+  font-size: 1.1rem !important;
+}
+
 .subHeading{
   font-size: 1.1rem !important;
 }
