@@ -32,7 +32,7 @@ const HelloWorld = () => {
          What I am trying to achieve : 
       </p>
       <p className={styles.missionStatement}>
-        To display text "Hello World" in an SVG element using D3
+        Display text "Hello World" in an SVG element using D3
       </p>
       <p className={styles.subHeading}>
         Input:
@@ -51,8 +51,8 @@ const HelloWorld = () => {
 
       </Segment>
       <p className={styles.content}>
-        D3 is all about 'selections and binding'. You make selections in DOM and manipulate them using some predefined methods known as 'operators'. It's just like how we do it in classic DOM manipulation but
-        D3 offers a lot cleaner interface. Other than its ease of use, D3 is an open source library so we can do lots of experiment without worrying about api call limitations
+        D3 is all about 'selections and binding'. In this blog we learnt how to make selections in DOM and manipulate them using some predefined methods known as 'operators'. It's just like how we do it in classic DOM manipulation but
+        D3 offers a lot cleaner interface. In the next blog, we will learn how to bind data. Other than its ease of use, D3 is an open source library so we can do lots of experiment without worrying about api call limitations
         or payments in general.
       </p>
     </Layout>
