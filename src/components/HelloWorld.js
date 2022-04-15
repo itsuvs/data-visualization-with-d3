@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import { Link } from 'react-router-dom';
 import Layout from './Layout';
 import * as d3 from 'd3';
 import { Header, Segment, Image } from 'semantic-ui-react';
@@ -52,8 +51,7 @@ const HelloWorld = () => {
       </Segment>
       <p className={styles.content}>
         D3 is all about 'selections and binding'. In this blog we learnt how to make selections in DOM and manipulate them using some predefined methods known as 'operators'. It's just like how we do it in classic DOM manipulation but
-        D3 offers a lot cleaner interface. In the next blog, we will learn how to bind data. Other than its ease of use, D3 is an open source library so we can do lots of experiment without worrying about api call limitations
-        or payments in general.
+        D3 offers a lot cleaner interface. In the next blog, we will learn how to bind data and visualize it.
       </p>
     </Layout>
   );
