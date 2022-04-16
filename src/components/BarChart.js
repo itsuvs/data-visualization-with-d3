@@ -15,15 +15,14 @@ const BarChart = () => {
 
     var svg = d3.select('#bar-chart')
                 .append('svg')
-                .attr('style',"width: 100%")
+                .attr('style',"width: 100%; background: #e5e5e5;")
                 .attr('width', width)
                 .attr('height', height)
-                .attr('style', 'background: #e5e5e5');
 
     var bars = svg.selectAll('.bar')
-                 .data(data)
-                 .enter()
-                 .append('rect');
+                  .data(data)
+                  .enter()
+                  .append('rect');
           
     bars.attr("x", function(d,i){ return 10 + i * 40})
         .attr("y", function(d){return height - d - 10})
@@ -37,8 +36,8 @@ const BarChart = () => {
                    .append("text");
                    
     texts.attr("x", function(d,i){ return 12 + i * 40})
-        .attr("y", function(d){ return height - d - 15})
-        .text(function(d){ return d});
+         .attr("y", function(d){ return height - d - 15})
+         .text(function(d){ return d});
   },[])
 
   return (
