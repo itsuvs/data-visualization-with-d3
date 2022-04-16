@@ -47,8 +47,15 @@ const BarChart = () => {
         Bar Chart
       </Header>
       <p className={styles.content}>
+        Before moving on to binding and visualization, I want to shortly discuss about the coordinate system of an 'SVG' element.
         Visualization in D3 requires one to understand the SVG coordinate system. Unlike the mathematical coordinate system where the point (x=0, y=0) lies in the lower left corner of the graph,
         in SVG coordinate system, the (x=0, y=0) point lies at the top left corner of the canvas. Let's understand this by coding a simple bar chart.
+      </p>
+      <p className={styles.mission}>
+         What I am trying to achieve : 
+      </p>
+      <p className={styles.missionStatement}>
+        Display a bar chart using data binding technique in D3
       </p>
       <p className={styles.subHeading}>
         Input:

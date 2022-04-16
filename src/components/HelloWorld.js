@@ -9,13 +9,13 @@ const HelloWorld = () => {
 
   useEffect(() => {
     d3.select('#hello-world')
-    .append('svg')
-    .attr('style',"outline: 1px solid black; width: 100%; background: black;")
-    .append('text')
-    .text('Hello World')
-    .attr("x", 20)
-    .attr("y", 90)
-    .attr('style',"fill: yellow; font-size: 36; font-family: monospace;")
+      .append('svg')
+      .attr('style',"outline: 1px solid black; width: 100%; background: black;")
+      .append('text')
+      .text('Hello World')
+      .attr("x", 20)
+      .attr("y", 90)
+      .attr('style',"fill: yellow; font-size: 36; font-family: monospace;")
   },[])
 
   return (
