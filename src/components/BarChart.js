@@ -65,15 +65,13 @@ const BarChart = () => {
       <p className={styles.content}>
         Once again, the program starts with making a selection. In the first selection, I've selected a 'div' with id '#bar-chart' and appended an SVG element to it which would serve as the workspace for our intended visualization. 
         In the second selection, I've selected a bunch of divs with  classname '.bar' which would serve as data block for respective data array element. In line 13, I connected these divs with data array using operator 'data()' and then 
-        in line 15, I finally assigned a shape, in our case its rectangle.
+        in line 15, I finally assigned a shape, in this case its rectangle.
 
-        <br/><br/>Now here comes the tricky part.
-
-        
-        {/* I guess from line 1 to 15 is pretty easy to understand. In lines 18 and 19, I have defined the 'x' and 'y' coordinates respectively for the bars. These points are the top left corner of each bar.
+        <br/><br/>Now here comes the tricky part. In lines 17 and 18, I have defined the respective 'x' and 'y' coordinates for the bars. These points are the top left corner of each bar.
         Since I am using 30 as width, I am returning '10 + i * 40' where 10 we can call as the margin from the left corner and 40 can be counted as 30+10 where 30 is the width of each bar and 
-        10 is the distance between two bars. For finding the y coordinates, I have substracted the data value from the height of the SVG to bring the bars to the bottom i.e 'height - d - 10' where 10 is
-        just margin from bottom.  */}
+        10 is the distance between two bars. For finding the y coordinates that would not make chart looks like its hanging from the top, I have substracted the data value from the height of 
+        the SVG to bring the bars to the bottom i.e 'height - d - 10' where 10 is
+        just margin from bottom. 
       </p>
       <p className={styles.subHeading}>
         Output:
@@ -81,6 +79,9 @@ const BarChart = () => {
       <Segment className={styles.contentImage} id="bar-chart" compact>
 
       </Segment>
+      <p className={styles.content}>
+        In this blog, we have learnt about the coordinate system of an SVG element, how to bind data and how to properly transform the chart so that it doesn't look like its hanging from the top.
+      </p>
     </Layout>
   );
 };
