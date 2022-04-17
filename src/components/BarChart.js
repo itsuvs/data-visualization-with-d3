@@ -47,7 +47,7 @@ const BarChart = () => {
       </Header>
       <p className={styles.content}>
         Before moving on to binding and visualization, I want to shortly discuss about the coordinate system of an 'SVG' element.
-        Visualization in D3 requires one to understand the SVG coordinate system. Unlike the mathematical coordinate system where the point (x=0, y=0) lies in the lower left corner of the graph,
+        Unlike the mathematical coordinate system where the point (x=0, y=0) lies in the lower left corner of the graph,
         in SVG coordinate system, the (x=0, y=0) point lies at the top left corner of the canvas. Let's understand this by coding a simple bar chart.
       </p>
       <p className={styles.mission}>
@@ -63,10 +63,17 @@ const BarChart = () => {
         <Image className={styles.contentImage} src={BarChartImage} fluid />
       </Segment>
       <p className={styles.content}>
-        I guess from line 1 to 15 is pretty easy to understand. In lines 18 and 19, I have defined the 'x' and 'y' coordinates respectively for the bars. These points are the top left corner of each bar.
+        Once again, the program starts with making a selection. In the first selection, I've selected a 'div' with id '#bar-chart' and appended an SVG element to it which would serve as the workspace for our intended visualization. 
+        In the second selection, I've selected a bunch of divs with  classname '.bar' which would serve as data block for respective data array element. In line 13, I connected these divs with data array using operator 'data()' and then 
+        in line 15, I finally assigned a shape, in our case its rectangle.
+
+        <br/><br/>Now here comes the tricky part.
+
+        
+        {/* I guess from line 1 to 15 is pretty easy to understand. In lines 18 and 19, I have defined the 'x' and 'y' coordinates respectively for the bars. These points are the top left corner of each bar.
         Since I am using 30 as width, I am returning '10 + i * 40' where 10 we can call as the margin from the left corner and 40 can be counted as 30+10 where 30 is the width of each bar and 
         10 is the distance between two bars. For finding the y coordinates, I have substracted the data value from the height of the SVG to bring the bars to the bottom i.e 'height - d - 10' where 10 is
-        just margin from bottom. 
+        just margin from bottom.  */}
       </p>
       <p className={styles.subHeading}>
         Output:
