@@ -7,8 +7,6 @@ import AxesImage from "../assets/axes.png";
 
 const Axes = () => {
   useEffect(() => {
-    var data = [85, 25, 152, 47, 200];
-
     var width = 272;
     var height = 272;
 
