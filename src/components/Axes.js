@@ -68,6 +68,9 @@ const Axes = () => {
         In line 16, I've set the domain as [0,200] which means that the data we want to represent lies between 0 to 200. The range I've set is [10,252] which means
         the data point '0' lies at 10px and '200' lies at 252px from the left side of the SVG respectively.
       </p>
+      <p className={styles.content}>
+        Lastly, I translated the scale we created to a point (0,140) so that it won't stick to the top side of SVG.
+      </p>
       <Segment className={styles.contentImage} id="axes" compact></Segment>
     </Layout>
   );
