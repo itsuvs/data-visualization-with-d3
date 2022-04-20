@@ -64,6 +64,10 @@ const Axes = () => {
         SVG element. Talking about scaleLinear, it's one of the scaling functions 
         which creates scale with a linear relationship between input and output.
       </p>
+      <p className={styles.content}>
+        In line 16, I've set the domain as [0,200] which means that we data we want to represent lies between 0 to 200. The range I've set is [10,252] which means
+        the data point '0' lies at 10px and '200' lies at 252px from the left side of the SVG respectively.
+      </p>
       <Segment className={styles.contentImage} id="axes" compact></Segment>
     </Layout>
   );
