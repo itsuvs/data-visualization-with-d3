@@ -8,10 +8,10 @@ export default function Scaling() {
     <Layout>
       <Header>Scaling</Header>
       <p className={styles.content}>
-        Scaling functions transform data values into visual variables such as
-        position, length, color, etc. In simple words, they describe how an
-        actual dimension of the original data is to be represented as a visual
-        variable. D3 has about 12 scaling functions that can be grouped into
+        In this blog, I will shine some light on my understanding of scaling functions in D3.
+        Scaling functions describe how an actual dimension of the original data is to be represented as a visual
+        variable. In simple words, they transform data values into visual variables such as position, length, color, etc. 
+        D3 has about 12 scaling functions that can be grouped into
         three categories:
       </p>
       <ul>
