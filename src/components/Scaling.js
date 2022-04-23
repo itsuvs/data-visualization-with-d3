@@ -19,12 +19,29 @@ export default function Scaling() {
           Scales with continuous input and continuous output
         </li>
         <li style={{ fontWeight: "bold", marginBottom: "8px" }}>
-          Scales with continuous input and discreet output
+          Scales with continuous input and discrete output
         </li>
         <li style={{ fontWeight: "bold", marginBottom: "8px" }}>
-          Scales with discreet input and discreet output
+          Scales with discrete input and discrete output
         </li>
       </ul>
+      <p className={styles.content}>
+        I believe to understand the above three categories one needs to understand what are
+          <span style={{ fontWeight: "bold", marginLeft: "5px" }}>
+             discrete
+          </span>  and 
+          <span style={{ fontWeight: "bold", marginLeft: "5px", marginRight: "5px" }}>
+             continuous
+          </span>
+           data.
+      </p>
+      <p className={styles.content}>
+          a. Discrete value: Countable but unmeasurable integers that cannot be sub-divided into smaller parts. 
+          eg: Number of coins in a bag, number of person in a stadium, etc.
+          <br/><br/>
+          b. Continuous value: Countable and measurable integers or fractions that can be sub-divided into smaller parts to derive more meaning.
+          eg: Height of a person in meters, feet, inches, centimeter and so on.. 
+      </p>
       <Container>
         <h4>1. Scales with continuous input and continuous output</h4>
         
@@ -81,7 +98,7 @@ export default function Scaling() {
           </Table.Body>
         </Table>
       </Container>
-
+      <br/>
       <Container>
         <h4>
          2. Scales with continuous input and discrete output
