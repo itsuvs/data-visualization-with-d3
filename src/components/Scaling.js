@@ -135,6 +135,42 @@ export default function Scaling() {
           </Table.Body>
         </Table>
       </Container>
+      <br/>
+      <Container>
+        <h4>3. Scales with discrete input and discrete output</h4>
+        
+        <Table celled padded>
+          <Table.Header>
+            <Table.Row>
+              <Table.HeaderCell>Function</Table.HeaderCell>
+              <Table.HeaderCell>Description</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell singleLine>scaleOrdinal()</Table.Cell>
+              <Table.Cell>
+                Maps discrete values to discrete values. The range array will repeat if its shorter than the domain array.
+              </Table.Cell>
+            </Table.Row>
+            
+            <Table.Row>
+              <Table.Cell singleLine>scaleBand()</Table.Cell>
+              <Table.Cell>
+                Constructs a new band scale with the domain specified as an array of values and the range as the minimum and maximum extents of the bands
+              </Table.Cell>
+            </Table.Row>
+
+            <Table.Row>
+              <Table.Cell singleLine>scalePoint()</Table.Cell>
+              <Table.Cell>
+                Maps from a discrete set of values to equally spaced points along the specified range
+              </Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      </Container>
     </Layout>
   );
 }
