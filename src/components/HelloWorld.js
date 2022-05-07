@@ -28,12 +28,12 @@ const HelloWorld = () => {
         Hello World
       </Header>
       <p className={styles.content}>
-        Just like with any other programming language, getting started with D3 (Data Driven Document) is incomplete without a "Hello, World" program. I could have done all sorts of crazy "Hello, World"
-        representation using shapes but for the sake of simplicity and understanding I am using text.
+        Just like with any other programming language, getting started with D3 (Data Driven Document) is incomplete without a "Hello, World" program. I could have gone for some crazy visualization for "Hello, World"
+        but for the sake of simplicity, understanding and my sanity I am using text.
       </p>
       <p className={styles.content}>
-        D3 is all about 'selections'. You select an element in DOM and manipulate how you want to using predefined methods known as 'operators'. It's just like how we do it in classic DOM manipulation but
-        D3 offers a lot cleaner interface. Other than its ease of use, D3 is an open source library (btw I am a big fan of open source) so we can do lots of experiment without worrying about api call limitations
+        D3 is all about 'selections and binding'. You make selections in DOM and manipulate them using some predefined methods known as 'operators'. It's just like how we do it in classic DOM manipulation but
+        D3 offers a lot cleaner interface. Other than its ease of use, D3 is an open source library so we can do lots of experiment without worrying about api call limitations
         or payments in general. Now, let's get into coding:
       </p>
       <p className={styles.subHeading}>

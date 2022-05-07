@@ -15,11 +15,9 @@ const BarChart = () => {
 
     var svg = d3.select('#bar-chart')
                 .append('svg')
-                .attr('style',"outline: 1px solid black")
                 .attr('style',"width: 100%")
                 .attr('width', width)
                 .attr('height', height)
-                .attr('style', 'outline: 1px solid black')
                 .attr('style', 'background: #e5e5e5');
 
     var bars = svg.selectAll('.bar')
